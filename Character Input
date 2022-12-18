@@ -1,0 +1,28 @@
+Write a program to print a character
+
+ INPUT & OUTPUT FORMAT: 
+
+Input consists of 1 character. Output consists of 1 character.
+
+Sample Input:
+
+A
+
+Sample Output:
+
+A
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    char A;
+    cin>>A;
+    cout<<A;
+    return 0;
+}
