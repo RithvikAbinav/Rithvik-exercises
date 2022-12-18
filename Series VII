@@ -1,0 +1,37 @@
+Write a program to generate the following series – 10, 5, 60, 15, 110….
+
+Sample Input:
+
+5
+
+Sample Output:
+
+10 5 60 15 110
+
+
+
+
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int n,i,a=10,b=5;
+    cin>>n;
+    cout<<a<<" "<<b<<" ";
+    for(i=1;i<=n-2;i++)
+    {
+        if(i%2==0)
+        {
+             b=b+10;
+            cout<<b<<" ";
+            
+        }
+        else
+        {
+           a=a+50;
+            cout<<a<<" ";
+        }
+    }    
+}
