@@ -1,0 +1,94 @@
+Write a program to find whether the given matrix is null or not with using functions.
+
+A NULL matrix is a matrix in which all its elements are zero, NOT NULL otherwise.
+
+Function specifications for the function details:
+
+The first argument corresponds to the number of elements in the array.
+
+The second argument corresponds to the pointer to an array.
+
+The function returns a value of 1 if it is a null matrix and 0 otherwise.
+
+Input and Output Format:
+
+Assume that the maximum number of rows and columns in the matrix is 10.
+
+Refer sample input and output for formatting specifications.
+Sample Input
+
+3
+
+3
+
+2 5 0
+
+0 0 0
+
+
+0 0 7
+
+Sample Output
+
+
+The matrix is
+2 5 0 
+0 0 0 
+0 0 7 
+The matrix is NOT NULL
+
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int mat(int m, int n)
+{
+    int i,j,c=0;
+    int a[m][n];
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            cin>>a[i][j];
+        }
+    }
+    cout<<"The matrix is"<<endl;
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            cout<<a[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            if(a[i][j]==0)
+            {
+                c++;
+            }
+        }
+        
+    }
+    if(c==n*m)
+    {
+        cout<<"The matrix is NULL";
+    }
+    else
+    {
+        cout<<"The matrix is NOT NULL";
+    }
+}
+int main ()
+{
+    int m,n,c;
+    cin>>m>>n;
+    mat(m,n);
+    return 0;
+}
