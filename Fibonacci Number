@@ -1,0 +1,40 @@
+Write a C program to find whether the given number is Fibonacci number.
+
+Sample Input:
+
+3
+
+Sample Output:
+
+
+Fibonacci number
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a=0,b=1,i,n,c;
+    cin>>n;
+    for(i=1;i<=100;i++)
+    {
+        c=a+b;
+        if(n==c)
+        {
+            break;
+        }
+        a=c;
+        b=a-b;
+    }
+    if(n==c)
+    {
+        cout<<"Fibonacci Number";
+    }
+    else
+    {
+        cout<<"Not Fibonacci Number";
+    }
+}
