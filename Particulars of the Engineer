@@ -1,0 +1,105 @@
+Write a Program to get the output using Inheritance. Use one class to get the input and use second class to print the output. Use necessary member functions. 
+
+Input and Output Format
+
+Refer sample input and output
+
+Sample Input
+
+Enter the first name = Ramu                                                                                                                     
+
+Enter the identity number = 12                                                                                                                 
+
+Enter the age = 25                                                                                                                                                                                                                   
+
+Enter the salary = 50000   
+
+Enter the designation of the Engineer: Content                                                                                                                                                           
+
+Sample Output
+
+Displaying the particulars of the Engineer                                                                                                      
+
+Name = Ramu                                                                                                                                     
+
+Identity Number = 12                                                                                                                            
+
+Age = 25                                                                                                                                        
+
+Salary = 50000                                                                                                                                  
+
+Designation = Content
+
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+class engineer
+{
+    public:
+    void name()
+    {
+        cout<<"Enter the first name =";
+        cin>>nam;
+        cout<<endl;
+    }
+    void id_num()
+    {
+        cout<<"Enter the identity number =";
+        cin>>id;
+        cout<<endl;
+    }
+    void age()
+    {
+        cout<<"Enter the age=";
+        cin>>a;
+        cout<<endl;
+    }
+    void salary()
+    {
+        cout<<"Enter the salary =";
+        cin>>sal;
+        cout<<endl;
+    }
+    void designation()
+    {
+        cout<<"Enter the designation of the Engineer:";
+        cin>>desgn;
+        cout<<endl;
+    }
+    string nam,desgn;
+    int id,a,sal;
+   
+};
+class disp:public engineer
+{
+    public:
+    void val()
+    {
+        name();
+        id_num();
+        age();
+        salary();
+        designation();
+    }
+    void display()
+    {
+        cout<<"Displaying the particulars of the Engineer "<<endl;
+        cout<<"Name="<<nam<<endl;
+        cout<<"Identity Number="<<id<<endl;
+        cout<<"Age = "<<a<<endl;
+        cout<<"Salary = "<<sal<<endl;
+        cout<<"Designition = "<<desgn<<endl;
+    }
+}v;
+
+int main()
+{
+  v.val();
+  v.display();
+  return 0;
+}
