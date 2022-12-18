@@ -1,0 +1,48 @@
+Karan have a cylindrical tank in which he have to fill water in certain hours. For every one hour his house will receive N litres of water from the corporation. Find whether he will be able to fill the tank with water in X hours. The radius and height of cylinder is given as input:
+
+INPUT & OUTPUT FORMAT:
+
+Input consists of 4 integer values.
+
+First input corresponds to the radius of the tank.
+
+Second input corresponds to the height of the tank.
+
+Third input corresponds to the amount of water the tank receives every hour.
+
+Fourth input corresponds to the total number of hours the tank receives water.
+
+
+
+Sample Input:  
+
+5
+7
+100
+6
+
+Sample Output:
+The tank can be filled within 6.0 hours
+
+
+
+
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+    int r,h,c,a,b;
+    float t;
+    cin >> r >> h >> c >> t;
+    a=2*3.14*r*h;
+    b=t/a;
+    if(b<=t)
+    {
+        printf("The tank can be filled within %.1f hours",t);
+    }
+    
+    return 0;
+}
