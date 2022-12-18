@@ -1,0 +1,50 @@
+A program to calculate the batting average.
+
+Sample input: 
+
+enter the number of matches played
+
+150
+
+enter the number innings batted
+
+36
+
+enter number of times notout
+
+32
+
+enter runs scored
+
+1000
+
+Sample Output
+
+
+batting average=250.0
+
+
+
+
+
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+    int a,b,c,d,e;
+    float f;
+    cout<<"enter the number of matches played"<<endl;
+    cin>>a;
+    cout<<"enter the number innings batted"<<endl;
+    cin>>b;
+    cout<<"enter number of times notout"<<endl;
+    cin>>c;
+    cout<<"enter runs scored"<<endl;
+    cin>>d;
+    e=b-c;
+    f=d/e;
+    cout<<"batting average=";
+    printf("%.1f",f);
+}
