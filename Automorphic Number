@@ -1,0 +1,37 @@
+Alisha is very interested in mathematics and daily she loves to solve mathematic puzzles. Her friend knows that and she asks her to find what an automorphic number is and to implement that concept using C programming. But Alisha is not very much good in programming. So help Alisha to implement this concept.
+
+Input & Output Format:
+
+Input consists of a integer.
+
+Output consists of a string.
+
+If the number is true display "Automorphic" if not display "Not Automorphic Number"
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+#include<cmath>
+int main()
+{
+    int n,x;
+    cin >> n;
+    x=pow(n,2);
+    if(n>10)
+    {
+        cout << "Invalid input";
+    }
+    else if(n==x)
+    {
+        cout << "Automorphic number";
+    }
+    else
+    {
+        cout << "Not Automorphic number";
+    }
+    return 0;
+}
