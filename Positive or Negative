@@ -1,0 +1,46 @@
+Write a program to find whether the given number is positive or negative.
+
+
+Input & Output Format:
+
+Input consists of a integer.
+
+if it is positive display "Positive" or else display "Negative 
+
+if it is zero display "Equal to 0"
+
+
+Sample Input:
+2
+
+Sample Output:
+
+Positive
+
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    if(n==0)
+    {
+        cout << "Equal to 0";
+    }
+    else if(n>=0)
+    {
+        cout << "Positive";
+    }
+    else
+    {
+        cout << "Negative";
+    }
+    return 0;
+}
