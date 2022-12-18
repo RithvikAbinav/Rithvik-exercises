@@ -1,0 +1,43 @@
+Write a program to find the factorial of a number using functions.
+
+Input Format:
+
+Input consists of 1 integer.
+
+Output Format:
+
+Output consists of a single integer. Refer sample output for formatting details.
+
+Sample Input:
+
+3
+
+Sample Output:
+
+
+6
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+int factorial( int n)
+{
+    int f=1;
+	for(int i=1;i<=n;i++)
+	{
+	    f=f*i;
+	}
+	return f;
+}
+int main()
+{
+	int num;
+	cin>>num;
+	cout<<factorial(num);
+	return 0;
+}
