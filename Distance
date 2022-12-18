@@ -1,0 +1,51 @@
+Write a program to find the distance between 2 points using functions.
+
+Input Format:
+
+Input consists of 4 integers. The first and second integer corresponds to the x-coordinate and y-coordinate of the first point. The third and fourth integer corresponds to the x-coordinate and y-coordinate of the second point.
+
+Output Format:
+
+Output consists of a single floating point number (correct to 2 decimal places.) Refer sample output for formatting details.
+
+Sample Input:
+
+3
+
+6
+
+4
+
+3
+
+Sample Output:
+
+Distance between the 2 points is 3.16
+
+
+
+
+
+
+
+#include <iostream>
+#include<math.h>
+using namespace std;
+float dis(float x1, float x2, float y1, float y2)
+{
+    float a,b,c,d;
+    float e;
+    a=(y1-x1);
+    b=a*a;
+    c=(y2-x2);
+    d=c*c;
+    e=sqrt(b+d);
+    return e;
+}
+int main()
+{
+    float a,b,c,d;
+    cin>>a>>b>>c>>d;
+    cout<<"Distance between the 2 points is ";
+    printf("%0.2f",dis(a,b,c,d));
+}
