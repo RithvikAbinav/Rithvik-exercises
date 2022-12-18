@@ -1,0 +1,29 @@
+Write a program to generate the following series – 0, 3, 8, 15, 24….
+
+Sample Input:
+5
+
+Sample Output:
+
+0 3 8 15 24
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,a=0;
+    cin>>n;
+    cout<<a<<" ";
+    for(i=3;i<=n+n;i++)
+    {
+        if(i%2==1)
+        {
+            a=a+i;
+            cout<<a<<" ";
+        }
+    }
+}
