@@ -1,0 +1,51 @@
+Write a C program to find whether the given numbers are Friendly Pair or not.
+
+Note: Friendly Pair are two or more numbers with a common abundancy.
+For example, 6 and 28 are Friendly Pair.
+(Sum of divisors of 6)/6 = (Sum of divisors of 28)/28
+
+Sample Input:
+6
+28
+
+Sample Output:
+Friendly Pair
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,a1,b=0,b1=0,n,n1,num1,num2,c,c1;
+    cin>>a>>a1;
+    n=a;
+    n1=a1;
+    for(c=1;c<a;c++)
+    {
+        if(a%c==0)
+        {
+            b=b+c;
+        }
+    }
+    for(c1=1;c1<a1;c1++)
+    {
+        if(a1%c1==0)
+        {
+            b1=b1+c1;
+        }
+    }
+    num1=b/n;
+    num2=b1/n1;
+    if(num1==num2)
+    {
+        cout<<"Friendly Pair";
+    }
+    else
+    {
+        cout<<"Not Friendly Pair";
+    }
+}
